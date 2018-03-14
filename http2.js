@@ -20,4 +20,6 @@ function onRequest(req, res) {
   res.stream.end('<h1>Hello World</h1>');
 }
 
-server.listen(3000);
+server.listen(8443, 'localhost', () => {
+    console.log('Server is running');
+  });
