@@ -22,14 +22,6 @@ function onRequest(req, res) {
   }
   req.stream.respondWithFile(filePath,
                         {'content-type': mime.getType(filePath)});
-
-  /*res.stream.respond({
-    'content-type': 'text/html',
-    ':status': 200
-  });*/
-
-
-  //res.stream.end('<h1>Hello World</h1>');
 }
 
 function push(stream, filePath) {
